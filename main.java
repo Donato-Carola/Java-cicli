@@ -87,9 +87,9 @@ public class main {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("inserisci numero");
-        int num = 7;
+        int numRiga = 7;
 
-        for(int i = 1; i<= num;i++){
+        for(int i = 1; i<= numRiga;i++){
             for(int j = i; j>0; j--){
                  System.out.print(j);
             }
@@ -98,7 +98,7 @@ public class main {
            }
            System.out.println("");
         }
-        for(int i = num-1; i>0;i--){
+        for(int i = numRiga-1; i>0;i--){
             for(int j = i; j>0; j--){
                 System.out.print(j);
             }
