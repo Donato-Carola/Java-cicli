@@ -55,8 +55,31 @@
 //!esercizio 3
 
 //Scrivere un programma in Java per visualizzare il modello come un triangolo ad angolo retto con un numero
-import java.util.Scanner;
+// import java.util.Scanner;
 
+
+// public class main {
+
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner(System.in);
+
+//         System.out.println("inserisci numero");
+//         int num= scan.nextInt();
+
+//         for(int i = 1; i<=num;i++){
+//             for(int j = 1; j<=i; j++)
+//             System.out.print(j);
+//          System.out.println();
+
+//         }
+    
+//     }
+// }
+
+//!esercizio 4
+
+//scrivere un programma Java per visualizzare la struttura del rombo numerico
+import java.util.Scanner;
 
 public class main {
 
@@ -64,14 +87,29 @@ public class main {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("inserisci numero");
-        int num= scan.nextInt();
+        int num = 7;
 
-        for(int i = 1; i<=num;i++){
-            for(int j = 1; j<=i; j++)
-            System.out.print(j);
-         System.out.println();
-
+        for(int i = 1; i<= num;i++){
+            for(int j = i; j>0; j--){
+                 System.out.print(j);
+            }
+            for(int k = 2; k<=i; k++){
+                System.out.print(k);
+           }
+           System.out.println("");
         }
+        for(int i = num-1; i>0;i--){
+            for(int j = i; j>0; j--){
+                System.out.print(j);
+            }
+            for(int k = 2; k<=i; k++){
+                System.out.print(k);
+           }
+           System.out.println("");
+        }
+
+
+
     
     }
 }
